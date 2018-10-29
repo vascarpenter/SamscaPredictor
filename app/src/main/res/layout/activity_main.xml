@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <RelativeLayout
+            android:layout_width="384dp"
+            android:layout_height="511dp" tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="0dp"
+            android:id="@+id/mainLayout">
+
+        <TextView
+                android:text="based on CREDO-Kyoto subanalysis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"/>
+        <Button
+                android:text="計算"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true" android:layout_marginBottom="211dp"
+                android:id="@+id/calculateButton"/>
+        <TextView
+                android:layout_width="218dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/thrombusRiskText"
+                android:layout_alignParentEnd="true" android:layout_marginEnd="4dp"
+                android:layout_alignTop="@+id/textView2"/>
+        <TextView
+                android:layout_width="218dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/bleedRiskText"
+                android:layout_alignTop="@+id/textView4" android:layout_toStartOf="@+id/thrombusRiskText"
+                android:layout_marginEnd="-218dp"/>
+        <TextView
+                android:text="出血リスクスコア"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="149dp" android:id="@+id/textView4"
+                android:layout_alignStart="@+id/textView2"/>
+        <TextView
+                android:text="血栓リスクスコア"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentStart="true"
+                android:layout_marginStart="31dp" android:layout_alignParentBottom="true"
+                android:layout_marginBottom="177dp" android:id="@+id/textView2"/>
+        <TextView
+                android:text="M.Natsuaki et al J Am Heart Assoc. 2018;7:e008708"
+                android:layout_width="367dp"
+                android:layout_height="wrap_content" android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView3" android:id="@+id/textView"/>
+        <TextView
+                android:text="３年間の累積発症率（第２世代DES）"
+                android:layout_width="304dp"
+                android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+                android:layout_marginBottom="111dp"
+                android:id="@+id/textView5" android:layout_alignParentStart="true" android:layout_marginStart="22dp"/>
+        <TextView
+                android:text="MI/ST/脳塞栓"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+                android:layout_marginBottom="79dp" android:layout_alignStart="@+id/textView4"
+                android:id="@+id/textView6"/>
+        <TextView
+                android:text="中〜大出血"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+                android:layout_marginBottom="49dp" android:layout_alignStart="@+id/textView4"
+                android:id="@+id/textView7"/>
+        <TextView
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cum3ybleedField"
+                android:layout_alignTop="@+id/textView7" android:layout_alignStart="@+id/thrombusRiskText"/>
+        <TextView
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cum3ythrombusField"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView6" android:layout_marginEnd="11dp"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
