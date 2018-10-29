@@ -12,7 +12,7 @@
             android:id="@+id/mainLayout">
 
         <TextView
-                android:text="based on CREDO-Kyoto subanalysis"
+                android:text="based on CREDO-Kyoto, RESET, NEXT study subanalysis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView3"/>
