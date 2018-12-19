@@ -4,7 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context="com.hatenablog.gikoha.samscapredictor.MainActivity">
 
     <RelativeLayout
             android:layout_width="384dp"
@@ -12,7 +12,7 @@
             android:id="@+id/mainLayout">
 
         <TextView
-                android:text="based on CREDO-Kyoto, RESET, NEXT study subanalysis"
+                android:text="based on H.Takimura et al. PLoS ONE Nov 14, 2018"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView3"/>
@@ -25,61 +25,36 @@
         <TextView
                 android:layout_width="218dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/thrombusRiskText"
+                android:id="@+id/rehospRiskText"
                 android:layout_alignParentEnd="true" android:layout_marginEnd="4dp"
                 android:layout_alignTop="@+id/textView2"/>
         <TextView
-                android:layout_width="218dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/bleedRiskText"
-                android:layout_alignTop="@+id/textView4" android:layout_toStartOf="@+id/thrombusRiskText"
-                android:layout_marginEnd="-218dp"/>
-        <TextView
-                android:text="出血リスクスコア"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="149dp" android:id="@+id/textView4"
-                android:layout_alignStart="@+id/textView2"/>
-        <TextView
-                android:text="血栓リスクスコア"
+                android:text="再入院リスク"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:layout_alignParentStart="true"
                 android:layout_marginStart="31dp" android:layout_alignParentBottom="true"
                 android:layout_marginBottom="177dp" android:id="@+id/textView2"/>
         <TextView
-                android:text="M.Natsuaki et al J Am Heart Assoc. 2018;7:e008708"
-                android:layout_width="367dp"
-                android:layout_height="wrap_content" android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView3" android:id="@+id/textView"/>
-        <TextView
-                android:text="３年間の累積発症率（第２世代DES）"
-                android:layout_width="304dp"
+                android:text="累積再入院率"
+                android:layout_width="117dp"
                 android:layout_height="wrap_content" android:layout_alignParentBottom="true"
                 android:layout_marginBottom="111dp"
                 android:id="@+id/textView5" android:layout_alignParentStart="true" android:layout_marginStart="22dp"/>
         <TextView
-                android:text="MI/ST/脳塞栓"
-                android:layout_width="112dp"
+                android:text="7点以上は高リスク"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:layout_alignParentBottom="true"
-                android:layout_marginBottom="79dp" android:layout_alignStart="@+id/textView4"
-                android:id="@+id/textView6"/>
-        <TextView
-                android:text="中〜大出血"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content" android:layout_alignParentBottom="true"
-                android:layout_marginBottom="49dp" android:layout_alignStart="@+id/textView4"
-                android:id="@+id/textView7"/>
+                android:layout_marginBottom="148dp"
+                android:id="@+id/textView6" android:layout_alignParentEnd="true" android:layout_marginEnd="48dp"/>
         <TextView
                 android:layout_width="212dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/cum3ybleedField"
-                android:layout_alignTop="@+id/textView7" android:layout_alignStart="@+id/thrombusRiskText"/>
+                android:layout_alignTop="@+id/textView7" android:layout_alignStart="@+id/rehospRiskText"/>
         <TextView
                 android:layout_width="212dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/cum3ythrombusField"
-                android:layout_alignParentEnd="true"
-                android:layout_alignTop="@+id/textView6" android:layout_marginEnd="11dp"/>
+                android:id="@+id/rehospPercentField"
+                android:layout_alignTop="@+id/textView5" android:layout_alignStart="@+id/rehospRiskText"/>
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
